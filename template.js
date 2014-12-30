@@ -5,19 +5,19 @@ exports.template = function(grunt, init, done){
         init.prompt('name'),
         init.prompt('description', 'Cool App'),
         init.prompt('version'),
-        init.prompt('license', 'MIT'),
+        init.prompt('licenses', 'MIT'),
         init.prompt('author_name'),
         init.prompt('author_url')
     ], function(err, props){
         var files = init.filesToCopy(props);
-        init.addLicenseFiles(files, props.license);
+        init.addLicenseFiles(files, props.licenses);
         init.copyAndProcess(files, props);
         init.writePackageJSON("package.json", {
             name: props.name,
             version: props.version,
             description: props.description,
             author: {
-                name : author_name,
+                name : props.author_name,
                 url : props.author_url
             },
             scripts: {
