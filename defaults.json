@@ -1,7 +1,5 @@
 {
-    author_name: 'Lin Dong',
-    author_url: 'https//github.com/ldong',
-    auhtor_email: 'ldong@gatech.edu',
-    series_name: 'Project Name'
-
+  "author_name": "Lin Dong",
+  "author_email": "ldong@gatech.edu",
+  "author_url": "http://ldong.org"
 }
