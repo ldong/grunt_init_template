@@ -9,7 +9,7 @@ Run the following to download the repo
 2. `grunt-init express_backbone`
 
 
-PS: You can change the default values in **defaults.js** by `cp defaults.js ~/.grunt-init/`
+PS: You can change the default values in **defaults.js** by `cp defaults.json ~/.grunt-init/`
 
 # Reference
 
